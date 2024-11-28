@@ -1,0 +1,143 @@
+*{
+    padding:0;
+    margin:0;
+}
+.main-wrapper{
+    width:100%;
+    height: 680px;
+    position: realtive;
+    overflow: hidden;
+}
+.main-wrapper::before{
+    content:"";
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    background-image: url(../img/ata-mohammadiyan-RdZejyeFB9A-unsplash\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+.nav-bar{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+.logo img{
+    width:158px;
+    height: 100px;
+}
+.cont-cart img{
+    width:18px;
+}
+.cont-cart, .logo,.lists{
+    width:33.33%;
+}
+.cont-cart{
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lists ul{
+    display:flex;
+    justify-content:space-around;
+    padding-left: auto;
+    padding-right: auto;
+}
+.lists ul li{
+    list-style:none;
+}
+.lists, .cont-cart{
+    padding-top: 45px;
+}
+.contact, .cart{
+    width:50%;
+}
+.lists ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: large;
+    font-weight: bold;
+}
+.lists ul li a:hover{
+    opacity:0.6;
+}
+.contact{
+    text-align: right;
+}
+.cart{
+    text-align: center;
+}
+hr{
+    width:1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.title{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 80px;
+    font-family: sans-serif;
+}
+.menu-bar{
+    width:1000px;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+.menu-bar img{
+    width:60px;
+}
+.car, .camera, .malware{
+    width:33.333%;
+    text-align: center;
+    border-radius:28px;
+}
+.malware div, .car div, .camera div{
+    padding-bottom: 20px;
+}
+.mal-title, .cam-title, .car-title{
+    font-size: x-large;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ver-line{
+    width:4px;
+    height: 176px;
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.car-desc, .cam-desc, .mal-desc{
+    font-size: larger;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.malware:hover{
+    background-color: #b9b1b1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform:scale(0.8);
+    cursor:pointer;
+}
+.car:hover{
+    background-color: #b9b1b1;
+    opacity: 0.8;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transform: rotate(10deg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor:pointer;
+}
+.camera:hover{
+    background-color: #b9b1b1;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
